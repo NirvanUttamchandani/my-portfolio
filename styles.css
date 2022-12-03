@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+#welcome-section{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(
+        to top right,
+        #303841 20%,
+        #000
+    );
+}
+
+#navbar{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(232, 31, 81);
+}
+
+#navbar a{
+    font-size: 27px;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    float: right;
+    padding: 19.4px;
+}
+
+#navbar a:hover{
+    background-color: rgb(96, 96, 160);
+    cursor: pointer;
+}
+
+#welcome-title{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin-top: calc(100vh/2);
+}
+
+#welcome-title h1{
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+#welcome-title p{
+    font-size: 30px;
+    color: red;
+    font-family: 'Poppins', sans-serif;
+}
+
+#projects{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(82, 82, 118);
+}
+
+img{
+    width: 250px;
+    height: 250px;
+}
+
+#projects h1{
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.project-tile{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-tile img{
+    box-shadow: 1px 1px 4px;
+    margin-bottom: 10px;
+}
+
+.project-1, .project-2, .project-3, .project-4, .project-5, .project-6{
+    background-color: #303841;
+}
+
+.project-tile a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 1px;
+}
+
+.project-tile a:hover{
+    cursor: pointer;
+    animation: name 1.5s linear infinite;
+}
+
+hr{
+    height: 1.5px;
+    border: none;
+    width: 560px;
+    margin-left: 170px;
+    background-color: #fff;
+    margin-top: 5px;
+}
+
+@keyframes name {
+    0%{
+        
+    }
+
+    25%{
+        color: white;
+    }
+
+    50%{
+        color: orange;
+    }
+
+    75%{
+        color: white;
+    }
+
+    100%{
+        color: orange;
+    }
+}
+
+@keyframes yo {
+    0%{
+        background-color: #000;
+    }
+    10%{
+        background-color: red;
+    }
+    20%{
+        background-color: green;
+    }
+    30%{
+        background-color: white;
+    }
+    40%{
+        background-color: blue;
+    }
+    50%{
+        background-color: orange;
+    }
+    60%{
+        background-color: purple;
+    }
+    70%{
+        background-color: yellow;
+    }
+    80%{
+        background-color: wheat;
+    }
+    90%{
+        background-color: gray;
+    }
+    100%{
+        background-color: pink;
+    }
+}
+
+@media all and (min-width: 800px){
+    body{
+        font-family: Arial;
+    }
+}
